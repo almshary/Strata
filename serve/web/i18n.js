@@ -148,7 +148,10 @@ window.StrataI18n = (() => {
     "End a request when the engine says nothing for this long (default 300 s, 0 = wait)": "إنهاء الطلب إذا بقي المحرك صامتًا لهذه المدة (الافتراضي 300 ثانية، 0 = الانتظار)",
     "Keep the last 100 requests' prompts and answers in memory for /api-monitor": "حفظ مدخلات وإجابات آخر 100 طلب في الذاكرة لمراقبة API",
     "Open the chat page in the browser when the model is ready": "فتح صفحة المحادثة في المتصفح عند جاهزية النموذج",
-    "VRAM in MiB the engine leaves free for other programs (engine default 700)": "ذاكرة البطاقة بوحدة MiB التي يتركها المحرك للبرامج الأخرى (الافتراضي 700)"
+    "VRAM in MiB the engine leaves free for other programs (engine default 700)": "ذاكرة البطاقة بوحدة MiB التي يتركها المحرك للبرامج الأخرى (الافتراضي 700)",
+    "not available": "غير متاح",
+    "not available on Windows AMD yet": "غير متاح حاليًا لبطاقات AMD على Windows",
+    "no GPU load or VRAM readings for AMD cards on Windows yet (Linux reads them from the amdgpu driver); the engine's own VRAM figures are in its log": "لا تتوفر حاليًا قراءات حمل البطاقة أو ذاكرة VRAM لبطاقات AMD على Windows (يقرأها Linux من برنامج تشغيل amdgpu)؛ تظهر أرقام ذاكرة المحرك في سجله"
   };
   let language = "en";
   try { if (localStorage.getItem("strata.language") === "ar") language = "ar"; } catch (_) {}
