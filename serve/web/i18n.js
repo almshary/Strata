@@ -151,7 +151,10 @@ window.StrataI18n = (() => {
     "VRAM in MiB the engine leaves free for other programs (engine default 700)": "ذاكرة البطاقة بوحدة MiB التي يتركها المحرك للبرامج الأخرى (الافتراضي 700)",
     "not available": "غير متاح",
     "not available on Windows AMD yet": "غير متاح حاليًا لبطاقات AMD على Windows",
-    "no GPU load or VRAM readings for AMD cards on Windows yet (Linux reads them from the amdgpu driver); the engine's own VRAM figures are in its log": "لا تتوفر حاليًا قراءات حمل البطاقة أو ذاكرة VRAM لبطاقات AMD على Windows (يقرأها Linux من برنامج تشغيل amdgpu)؛ تظهر أرقام ذاكرة المحرك في سجله"
+    "no GPU load or VRAM readings for AMD cards on Windows yet (Linux reads them from the amdgpu driver); the engine's own VRAM figures are in its log": "لا تتوفر حاليًا قراءات حمل البطاقة أو ذاكرة VRAM لبطاقات AMD على Windows (يقرأها Linux من برنامج تشغيل amdgpu)؛ تظهر أرقام ذاكرة المحرك في سجله",
+    "Prefill t/s": "قراءة المدخلات رمز/ث",
+    "Decode t/s": "التوليد رمز/ث",
+    "New prompt tokens per second, excluding reused cache tokens (engine prompt time)": "عدد رموز المدخلات الجديدة في الثانية، باستثناء الرموز المُعاد استخدامها من الذاكرة المؤقتة (زمن قراءة المحرك)"
   };
   let language = "en";
   try { if (localStorage.getItem("strata.language") === "ar") language = "ar"; } catch (_) {}

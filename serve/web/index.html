@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Strata</title>
+<link rel="icon" href="web/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="web/tokens.css">
 <link rel="stylesheet" href="web/components.css">
 <link rel="stylesheet" href="web/app.css">
@@ -120,8 +121,8 @@
           <div class="table-wrap" id="req-wrap">
             <table class="st-table">
               <thead><tr><th><span data-i18n="Time">Time</span></th><th><span data-i18n="Status">Status</span></th><th class="num"><span data-i18n="Prompt">Prompt</span></th><th class="num"><span data-i18n="Reused">Reused</span></th><th class="num"><span data-i18n="Output">Output</span></th>
-                <th class="num"><span data-i18n="Tok/s">Tok/s</span></th><th class="num" title="While writing the answer: the share of the experts looked up that were already in VRAM. Experts the GPU read over PCIe (--pcie-frac) are not counted in it; their share of all routed experts is shown after it (+N% PCIe)" data-i18n-title="While writing the answer: the share of the experts looked up that were already in VRAM. Experts the GPU read over PCIe (--pcie-frac) are not counted in it; their share of all routed experts is shown after it (+N% PCIe)"><span data-i18n="VRAM hit rate">VRAM hit rate</span></th><th class="num"><span data-i18n="Duration">Duration</span></th></tr></thead>
-              <tbody id="req-body"><tr><td colspan="8" class="muted"><span data-i18n="No requests yet">No requests yet</span></td></tr></tbody>
+                <th class="num" title="New prompt tokens per second, excluding reused cache tokens (engine prompt time)" data-i18n-title="New prompt tokens per second, excluding reused cache tokens (engine prompt time)"><span data-i18n="Prefill t/s">Prefill t/s</span></th><th class="num"><span data-i18n="Decode t/s">Decode t/s</span></th><th class="num" title="While writing the answer: the share of the experts looked up that were already in VRAM. Experts the GPU read over PCIe (--pcie-frac) are not counted in it; their share of all routed experts is shown after it (+N% PCIe)" data-i18n-title="While writing the answer: the share of the experts looked up that were already in VRAM. Experts the GPU read over PCIe (--pcie-frac) are not counted in it; their share of all routed experts is shown after it (+N% PCIe)"><span data-i18n="VRAM hit rate">VRAM hit rate</span></th><th class="num"><span data-i18n="Duration">Duration</span></th></tr></thead>
+              <tbody id="req-body"><tr><td colspan="9" class="muted"><span data-i18n="No requests yet">No requests yet</span></td></tr></tbody>
             </table>
           </div>
           <p class="muted req-totals" id="req-totals"></p>
